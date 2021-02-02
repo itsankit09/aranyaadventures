@@ -186,6 +186,7 @@ header {
   position: fixed;
   background-color: rgba(12,12,12,0.9);
   z-index: 10;
+  text-align: center;
 }
 
 .sidebar-navigation .logo {
@@ -379,6 +380,10 @@ header {
 
 .Modern-Slider .slick-dots {
   opacity: 0;
+}
+
+.icon-heading{
+  color: white;
 }
 
 .Modern-Slider .NextArrow{
