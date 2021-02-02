@@ -884,6 +884,13 @@ header {
   border-bottom: 10px solid #45489a;
 }
 
+
+@media only screen and (max-width: 320px) {
+  #gallery .tabs li  {
+    width: 50% !important;
+  }
+}
+
 #gallery .tabs li {
   display: inline-block;
   text-align: center;
