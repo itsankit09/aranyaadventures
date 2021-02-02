@@ -869,9 +869,9 @@ header {
 /* Gallery Style */
 
 #gallery {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 8px;
 }
 
 #gallery .tabs {
@@ -943,12 +943,14 @@ header {
   margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  
 }
 
 #gallery .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 #gallery .tabgroup ul li img {
