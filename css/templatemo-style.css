@@ -881,11 +881,10 @@ header {
   height: 90px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid #45489a;
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   #gallery .tabs li  {
     width: 50% !important;
   }
