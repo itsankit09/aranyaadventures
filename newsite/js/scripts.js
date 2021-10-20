@@ -174,10 +174,8 @@
 
   function sendEmail(name, email, phone, message) {
     Email.send({
-      Host : "smtp.yourisp.com",
-      Username : atob("username"),
-      Password : atob("password"),
-      To : email,
+      SecureToken : "541bb20f-cc3d-4a78-b549-f9c960d13644",
+      To : "aranyaadventures@gmail.com",
       From : "Aranya Website",
       Subject : `${name}-${phone} New Enquiry`,
       Body : message
