@@ -1,0 +1,47 @@
+
+@media (max-width: 600px) {
+    .text-container h1 {
+      font-size: 30px;
+    }
+  
+    .text-container .p-heading {
+      font-size: 15px !important;
+    }
+  
+  
+    .header_slider_1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../img/slide_5.jpg") center center no-repeat;
+      background-size: cover;
+      height: 50vh;
+    }
+  
+    .header_slider_2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../img/slide_4.jpg") center center no-repeat;
+      background-size: cover;
+      height: 50vh;
+    }
+  
+    .header_slider_3 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../img/slide_3.JPG") center center no-repeat;
+      background-size: cover;
+      height: 50vh;
+    }
+
+    .filter .element-item .element-item-overlay .mobile-more {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4px !important;
+        color: rgb(160, 158, 158);
+        display: block;
+    }
+
+    .filter .element-item .element-item-overlay span {
+        font-size: 10px !important;
+    }
+  }
+  
