@@ -174,7 +174,9 @@
 
   function sendEmail(name, email, phone, message) {
     Email.send({
-      SecureToken : "541bb20f-cc3d-4a78-b549-f9c960d13644",
+      Host : "smtp.gmail.com",
+      Username : "aranyaadventures@gmail.com",
+      Password : "Connectgithub1",
       To : "aranyaadventures@gmail.com",
       From : "Aranya Website",
       Subject : `${name}-${phone} New Enquiry`,
