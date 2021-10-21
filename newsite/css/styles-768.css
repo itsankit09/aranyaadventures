@@ -5,6 +5,7 @@
       width: 85%;
       margin-right: auto;
       margin-left: auto;
+      font-family: 'aranya';
     }
     /* end of general styles */
   
@@ -81,7 +82,7 @@
     }
   
     .header h1 {
-      font: 700 3.5rem/4rem "Montserrat", sans-serif;
+      font-family: 'aranya';
     }
     /* end of header */
   

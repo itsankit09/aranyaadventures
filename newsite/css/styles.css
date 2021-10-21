@@ -42,6 +42,15 @@ Colors:
 - Body text - light gray #dfe5ec
 ******************************************/
 
+@font-face {
+  font-family: 'aranya';
+  src: url('../webfonts/FontsFree-Net-Carogna.ttf');
+}
+
+@font-face {
+  font-family: 'aranya1';
+  src: url('../webfonts/FontsFree-Net-Corduroy-1.ttf');
+}
 /******************************/
 /*     01. General Styles     */
 /******************************/
@@ -832,23 +841,31 @@ screen and (-ms-high-contrast: none) {
   margin-right: inherit;
 }
 
+.header_slider_0 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../images/slide_2.JPG") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
 .header_slider_1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../img/slide_5.jpg") center center no-repeat;
+    url("../images/slide_5.JPG") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 .header_slider_2 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../img/slide_4.jpg") center center no-repeat;
+    url("../images/slide_4.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 .header_slider_3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../img/slide_3.JPG") center center no-repeat;
+    url("../images/slide_3.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -860,8 +877,10 @@ screen and (-ms-high-contrast: none) {
 }
 
 .header .text-container {
+  font-family: 'aranya';
+  font-weight: 200;
   float: right;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .header h1 {
