@@ -79,6 +79,7 @@
 
     .filter .element-item .element-item-overlay span {
         font-size: 10px !important;
+        padding-left: 10px;
     }
   }
   
