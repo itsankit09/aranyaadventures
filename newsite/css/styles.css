@@ -1459,6 +1459,8 @@ screen and (-ms-high-contrast: none) {
   overflow: hidden;
   width: 50%;
   background-color: #000;
+  border-style: solid;
+  border-color: whitesmoke;
   /* to hide 1px white margin in IE */
 }
 

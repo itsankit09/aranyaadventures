@@ -26,9 +26,14 @@
       float: right;
       margin-bottom: 4rem;
     }
+
     .p-heading {
       margin-bottom: 3.5rem;
       text-align: right;
+    }
+
+    .element-item {
+      height: 110px;
     }
 
 
