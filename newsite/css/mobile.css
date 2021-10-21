@@ -8,7 +8,17 @@
       font-size: 15px !important;
     }
   
-  
+    .header .header-content {
+      padding-top: 13rem;
+      padding-bottom: 7.5rem;
+      text-align: right;
+    }
+
+    .p-heading {
+      margin-bottom: 3.5rem;
+      text-align: right;
+    }
+
     .header_slider_1 {
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../img/slide_5.jpg") center center no-repeat;
