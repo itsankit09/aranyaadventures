@@ -41,7 +41,7 @@
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_2.JPG") center center no-repeat;
       background-size: cover;
-      height: 100vh;
+      height: 50vh;
     }
 
 
@@ -49,21 +49,21 @@
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_5.JPG") center center no-repeat;
       background-size: cover;
-      height: 100vh;
+      height: 50vh;
     }
 
     .header_slider_2 {
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_4.jpg") center center no-repeat;
       background-size: cover;
-      height: 100vh;
+      height: 50vh;
     }
 
     .header_slider_3 {
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_3.jpg") center center no-repeat;
       background-size: cover;
-      height: 100vh;
+      height: 50vh;
     }
 
 

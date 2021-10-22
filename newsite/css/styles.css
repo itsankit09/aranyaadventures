@@ -851,7 +851,7 @@ screen and (-ms-high-contrast: none) {
 
 .header_slider_1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../images/slide_5.JPG") center center no-repeat;
+    url("../images/slide_5.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -865,7 +865,7 @@ screen and (-ms-high-contrast: none) {
 
 .header_slider_3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../images/slide_3.jpg") center center no-repeat;
+    url("../images/slide_3.JPG") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -1745,6 +1745,13 @@ screen and (-ms-high-contrast: none) {
 
 .form-2 .text-container {
   margin-bottom: 3rem;
+  text-align: center;
+}
+
+.form-2 .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-2 .section-title {

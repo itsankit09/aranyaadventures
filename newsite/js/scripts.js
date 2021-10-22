@@ -147,144 +147,24 @@
     }
   });
 
-
-  /* Contact Form */
-  $("#contactForm")
-    .validator()
-    .on("submit", function (event) {
-      if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-        cformError();
-        csubmitMSG(false, "Please fill all fields!");
-      } else {
-        // everything looks good!
-        event.preventDefault();
-        csubmitForm();
-      }
-    });
-
-  function csubmitForm() {
-    // initiate variables with form content
-    var name = $("#cname").val();
-    var email = $("#cemail").val();
-    var phone = $("#cphone").val();
-    var message = $("#cmessage").val();
-    sendEmail(name,email, message);
-  }
-
-  function sendEmail(name, email, phone, message) {
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "aranyaadventures@gmail.com",
-      Password : "Connectgithub1",
-      To : "aranyaadventures@gmail.com",
-      From : "Aranya Website",
-      Subject : `${name}-${phone} New Enquiry`,
-      Body : message
-  }).then(()=> {
-    message => alert("test")
-    $("#cname").val('')
-    $("#cemail").val('')
-    $("#cphone").val('')
-    $("#cmessage").val('')
-    csubmitMSG(true, '')
-    alert("We will soon reachout to you - Team Aranya")
-  });
-  
-  }
-
-  function cformError() {
-    $("#contactForm")
-      .removeClass()
-      .addClass("shake animated")
-      .one(
-        "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-        function () {
-          $(this).removeClass();
-        }
-      );
-  }
-
-  function csubmitMSG(valid, msg) {
-    if (valid) {
-      var msgClasses = "h3 text-center tada animated";
-    } else {
-      var msgClasses = "h3 text-center";
-    }
-    $("#cmsgSubmit").removeClass().addClass(msgClasses).text(msg);
-  }
-
-  /* Privacy Form */
-  $("#privacyForm")
-    .validator()
-    .on("submit", function (event) {
-      if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-        pformError();
-        psubmitMSG(false, "Please fill all fields!");
-      } else {
-        // everything looks good!
-        event.preventDefault();
-        psubmitForm();
-      }
-    });
-
-  function psubmitForm() {
-    // initiate variables with form content
-    var name = $("#pname").val();
-    var email = $("#pemail").val();
-    var select = $("#pselect").val();
-    var terms = $("#pterms").val();
-
-    $.ajax({
-      type: "POST",
-      url: "php/privacyform-process.php",
-      data:
-        "name=" +
-        name +
-        "&email=" +
-        email +
-        "&select=" +
-        select +
-        "&terms=" +
-        terms,
-      success: function (text) {
-        if (text == "success") {
-          pformSuccess();
-        } else {
-          pformError();
-          psubmitMSG(false, text);
-        }
-      },
-    });
-  }
-
-  function pformSuccess() {
-    $("#privacyForm")[0].reset();
-    psubmitMSG(true, "Request Submitted!");
-    $("input").removeClass("notEmpty"); // resets the field label after submission
-  }
-
-  function pformError() {
-    $("#privacyForm")
-      .removeClass()
-      .addClass("shake animated")
-      .one(
-        "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-        function () {
-          $(this).removeClass();
-        }
-      );
-  }
-
-  function psubmitMSG(valid, msg) {
-    if (valid) {
-      var msgClasses = "h3 text-center tada animated";
-    } else {
-      var msgClasses = "h3 text-center";
-    }
-    $("#pmsgSubmit").removeClass().addClass(msgClasses).text(msg);
-  }
+//   var flag = 0
+//   $(window).scroll(function() {
+//     var hT = $('.instagram-container').offset().top,
+//         hH = $('.instagram-container').outerHeight(),
+//         wH = $(window).height(),
+//         wS = $(this).scrollTop();
+//         if (wS > (hT+hH-wH) && flag === 0){
+//             flag=1;
+//             console.log('H1 on the view!');
+//             var userFeed = new Instafeed({
+//               get: 'user',
+//               target: "instagram",
+//                 resolution: 'low_resolution',
+//               accessToken: 'IGQVJXb2RtR0tpZATNmb0l2T2ZAlbk5RNENCM1BfNkg0TDg4dGQ1X28xcmFBeTRiVnh4dWVhd2hveXNtU3pqSjhUVjRSUEZAsd1V2OUZARaEY2enpMdWg4SFBxVlpRNlUwNGxESDBQNFBrVjFuVnU3Q0xJYwZDZD'
+//             });
+//             userFeed.run();
+//         }
+//  });
 
   /* Back To Top Button */
   // create the back to top button
