@@ -70,24 +70,20 @@
       delay: 4000,
       disableOnInteraction: false,
     },
+    zoom: {
+      maxRatio: 5,
+    },
     loop: true,
     pagination: ".swiper-pagination",
     paginationClickable: true,
     parallax: true,
     slidesPerView: 1,
     spaceBetween: 0,
-    breakpoints: {
-      // when window is <= 992px
-      992: {
-        slidesPerView: 2,
-      },
-      // when window is <= 768px
-      768: {
-        slidesPerView: 1,
-      },
+    zoom: {
+      maxRatio: 1.2,
+      minRation: 1
     },
   });
-
   // filter items on button click
   $(".filters-button-group").on("click", "a", function () {
     var filterValue = $(this).attr("data-filter");

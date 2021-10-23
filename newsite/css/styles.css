@@ -723,6 +723,28 @@ screen and (-ms-high-contrast: none) {
   -webkit-backface-visibility: hidden;
 }
 
+.lb-nav a.lb-prev {
+  opacity: 1 !important;
+}
+
+.lb-nav a.lb-next {
+  opacity: 1 !important;
+}
+
+#instagram {
+  padding-top: 4rem;
+}
+
+.navbar-title{
+  color: white;
+  align-items: center;
+  left: 315px;
+  top: 26px;
+  font-size: 19px;
+  margin-left: 100px;
+  font-family: 'aranya';
+}
+
 .navbar-custom .navbar-brand.logo-text {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -845,6 +867,7 @@ screen and (-ms-high-contrast: none) {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../images/slide_2.JPG") center center no-repeat;
   background-size: cover;
+  overflow: hidden;
   height: 100vh;
 }
 
