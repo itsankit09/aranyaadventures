@@ -155,7 +155,7 @@
         if (wS > (hT+hH-wH) && flag === 0){
             flag=1;
             console.log('H1 on the view!');
-            fetchNewPosts()
+            getPosts()
         }
  });
 
