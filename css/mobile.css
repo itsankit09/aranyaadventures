@@ -6,9 +6,13 @@
     src: url('../webfonts/FontsFree-Net-Carogna.ttf');
   }
 
-  .post span {
-    display: none;
-  }
+    .post span {
+      display: none;
+    }
+
+    #about {
+      padding-top: 3.875rem;
+    }
 
     .navbar-custom .navbar-brand.logo-image img {
       width: 5.5rem;
@@ -53,7 +57,7 @@
     }
     
     .header .header-content {
-      padding-top: 18rem;
+      padding-top: 24rem;
       text-align: right;
     }
 
@@ -78,7 +82,7 @@
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_2.JPG") center center no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 65vh;
     }
 
 
@@ -86,21 +90,21 @@
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_5.jpg") center center no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 65vh;
     }
 
     .header_slider_2 {
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_4.jpg") center center no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 65vh;
     }
 
     .header_slider_3 {
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url("../images/slide_3.JPG") center center no-repeat;
       background-size: cover;
-      height: 50vh;
+      height: 65vh;
     }
 
 
