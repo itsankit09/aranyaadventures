@@ -1,0 +1,17 @@
+
+/* Min-width width 1600px */
+@media (min-width: 1600px) {
+    /* Navigation */
+    .navbar-custom {
+      padding-right: 12rem;
+      padding-left: 12rem;
+    }
+  
+    .navbar-custom.top-nav-collapse {
+      padding-right: 12rem;
+      padding-left: 12rem;
+    }
+    /* end of navigation */
+  }
+  /* end of min-width width 1200px */
+  
