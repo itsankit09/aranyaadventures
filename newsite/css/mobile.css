@@ -5,6 +5,11 @@
     font-family: 'aranya';
     src: url('../webfonts/FontsFree-Net-Carogna.ttf');
   }
+
+  .post span {
+    font-size: 13px !important;
+    font-family: 'aranya' !important;
+  }
   
     .text-container h1 {
       font-size: 30px;

@@ -146,25 +146,18 @@
       $(this).removeClass("notEmpty");
     }
   });
-
-//   var flag = 0
-//   $(window).scroll(function() {
-//     var hT = $('.instagram-container').offset().top,
-//         hH = $('.instagram-container').outerHeight(),
-//         wH = $(window).height(),
-//         wS = $(this).scrollTop();
-//         if (wS > (hT+hH-wH) && flag === 0){
-//             flag=1;
-//             console.log('H1 on the view!');
-//             var userFeed = new Instafeed({
-//               get: 'user',
-//               target: "instagram",
-//                 resolution: 'low_resolution',
-//               accessToken: 'IGQVJXb2RtR0tpZATNmb0l2T2ZAlbk5RNENCM1BfNkg0TDg4dGQ1X28xcmFBeTRiVnh4dWVhd2hveXNtU3pqSjhUVjRSUEZAsd1V2OUZARaEY2enpMdWg4SFBxVlpRNlUwNGxESDBQNFBrVjFuVnU3Q0xJYwZDZD'
-//             });
-//             userFeed.run();
-//         }
-//  });
+  var flag = 0
+  $(window).scroll(function() {
+    var hT = $('#gallery').offset().top,
+        hH = $('#gallery').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH) && flag === 0){
+            flag=1;
+            console.log('H1 on the view!');
+            fetchNewPosts()
+        }
+ });
 
   /* Back To Top Button */
   // create the back to top button
