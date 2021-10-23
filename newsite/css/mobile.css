@@ -11,7 +11,7 @@
   }
 
     .navbar-custom .navbar-brand.logo-image img {
-      width: 7.0625rem;
+      width: 7.5rem;
       height: 7.5rem;
       position: absolute;
       top: 0px;
@@ -53,8 +53,7 @@
     }
     
     .header .header-content {
-      padding-top: 13rem;
-      padding-bottom: 7.5rem;
+      padding-top: 18rem;
       text-align: right;
     }
 
