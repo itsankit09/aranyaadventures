@@ -11,8 +11,8 @@
   }
 
     .navbar-custom .navbar-brand.logo-image img {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 5.5rem;
+      height: 5.5rem;
       position: absolute;
       top: 0px;
       -webkit-backface-visibility: hidden;

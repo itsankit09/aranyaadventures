@@ -1532,6 +1532,11 @@ screen and (-ms-high-contrast: none) {
   font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
 }
 
+
+#schedule {
+  text-align: center;
+}
+
 /**********************************/
 /*     13. Project Lightboxes     */
 /**********************************/
@@ -1737,7 +1742,7 @@ screen and (-ms-high-contrast: none) {
 
 .counter #counter .cell {
   display: inline-block;
-  width: 9.5rem;
+  width: 12.5rem;
   margin-bottom: 0.75rem;
 }
 
@@ -1751,9 +1756,7 @@ screen and (-ms-high-contrast: none) {
 
 .counter #counter .counter-info {
   display: inline-block;
-  margin-left: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+ 
   vertical-align: middle;
 }
 
