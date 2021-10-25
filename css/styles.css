@@ -1703,11 +1703,11 @@ screen and (-ms-high-contrast: none) {
 /*********************/
 .counter {
   padding-top: 6.875rem;
-  padding-bottom: 5.25rem;
 }
 
 .counter .image-container {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .counter .image-container img {
