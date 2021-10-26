@@ -1,25 +1,24 @@
-
 var instagramPosts = [];
 var fetchUrl = 'https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=IGQVJXb2RtR0tpZATNmb0l2T2ZAlbk5RNENCM1BfNkg0TDg4dGQ1X28xcmFBeTRiVnh4dWVhd2hveXNtU3pqSjhUVjRSUEZAsd1V2OUZARaEY2enpMdWg4SFBxVlpRNlUwNGxESDBQNFBrVjFuVnU3Q0xJYwZDZD'
 var postsCount = 0;
 var currentDisplayPostcount = 0;
 
-function populatePosts(posts){
+function populatePosts(posts) {
     const instaGrid = document.getElementsByClassName("instagram-grid")[0];
-    let  child = '';
+    let child = '';
     const len = posts.length;
     var maxPost = currentDisplayPostcount;
-    posts.forEach((post, i)=> {
-        try{
-            if(i<maxPost){
-                if(post.media_type === 'VIDEO'){
+    posts.forEach((post, i) => {
+        try {
+            if (i < maxPost) {
+                if (post.media_type === 'VIDEO') {
                     // child += createNewVideoPost(post.media_url, post.caption, post.permalink)
                     maxPost++;
-                }else{
+                } else {
                     child += createNewPost(post.media_url, post.caption, post.permalink)
                 }
             }
-        }catch(e){
+        } catch (e) {
 
         }
     })
@@ -54,22 +53,23 @@ function createNewVideoPost(image, content, hyperlink) {
     `
 }
 
-function fetchNewPosts(){
+function fetchNewPosts() {
     fetch(fetchUrl)
-    .then(response => response.json())
-    .then(data => {
-        instagramPosts = [...instagramPosts, ...data.data];
-        postsCount = instagramPosts.length;
-        fetchUrl = data.paging.next;
-        populatePosts(instagramPosts);
-    })
+        .then(response => response.json())
+        .then(data => {
+            const imagePosts = data.data.filter(post => post.media_type !== 'VIDEO');
+            instagramPosts = [...instagramPosts, ...imagePosts];
+            postsCount = instagramPosts.length;
+            fetchUrl = data.paging.next;
+            populatePosts(instagramPosts);
+        })
 }
 
 function getPosts() {
     currentDisplayPostcount += 12
-    if(currentDisplayPostcount > postsCount){
+    if (currentDisplayPostcount > postsCount) {
         fetchNewPosts();
-    }else{
+    } else {
         populatePosts(instagramPosts)
     }
 }

@@ -43,13 +43,13 @@ Colors:
 ******************************************/
 
 @font-face {
-  font-family: 'aranya';
-  src: url('../webfonts/FontsFree-Net-Carogna.ttf');
+  font-family: "aranya";
+  src: url("../webfonts/FontsFree-Net-Carogna.ttf");
 }
 
 @font-face {
-  font-family: 'aranya1';
-  src: url('../webfonts/FontsFree-Net-Corduroy-1.ttf');
+  font-family: "aranya1";
+  src: url("../webfonts/FontsFree-Net-Corduroy-1.ttf");
 }
 /******************************/
 /*     01. General Styles     */
@@ -269,16 +269,16 @@ strong {
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
-screen and (-ms-high-contrast: none) {
+  screen and (-ms-high-contrast: none) {
   .label-control {
     top: 0.9375rem;
   }
 }
 
-.form-control-input:focus+.label-control,
-.form-control-input.notEmpty+.label-control,
-.form-control-textarea:focus+.label-control,
-.form-control-textarea.notEmpty+.label-control {
+.form-control-input:focus + .label-control,
+.form-control-input.notEmpty + .label-control,
+.form-control-textarea:focus + .label-control,
+.form-control-textarea.notEmpty + .label-control {
   top: 0.125rem;
   opacity: 1;
   font-size: 0.75rem;
@@ -311,7 +311,7 @@ screen and (-ms-high-contrast: none) {
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
-screen and (-ms-high-contrast: none) {
+  screen and (-ms-high-contrast: none) {
   .form-control-input {
     padding-top: 1.25rem;
     padding-bottom: 0.75rem;
@@ -385,7 +385,7 @@ input[type="checkbox"] {
 
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
-screen and (-ms-high-contrast: none) {
+  screen and (-ms-high-contrast: none) {
   input[type="checkbox"] {
     vertical-align: -9%;
   }
@@ -649,7 +649,7 @@ screen and (-ms-high-contrast: none) {
   text-align: center;
 }
 
-.spinner>div {
+.spinner > div {
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -670,7 +670,6 @@ screen and (-ms-high-contrast: none) {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-
   0%,
   80%,
   100% {
@@ -683,7 +682,6 @@ screen and (-ms-high-contrast: none) {
 }
 
 @keyframes sk-bouncedelay {
-
   0%,
   80%,
   100% {
@@ -735,14 +733,14 @@ screen and (-ms-high-contrast: none) {
   padding-top: 4rem;
 }
 
-.navbar-title{
+.navbar-title {
   color: white;
   align-items: center;
   left: 315px;
   top: 26px;
   font-size: 19px;
   margin-left: 100px;
-  font-family: 'aranya';
+  font-family: "aranya";
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -771,7 +769,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 /* Dropdown Menu */
-.navbar-custom .dropdown:hover>.dropdown-menu {
+.navbar-custom .dropdown:hover > .dropdown-menu {
   display: block;
   /* this makes the dropdown menu stay open while hovering it */
   min-width: auto;
@@ -839,19 +837,27 @@ screen and (-ms-high-contrast: none) {
   font-size: 2rem;
 }
 
-.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-times {
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-times {
   display: none;
 }
 
-.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-bars {
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-bars {
   display: inline-block;
 }
 
-.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-bars {
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-bars {
   display: none;
 }
 
-.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-times {
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-times {
   display: inline-block;
   margin-right: 0.125rem;
 }
@@ -870,7 +876,6 @@ screen and (-ms-high-contrast: none) {
   overflow: hidden;
   height: 100vh;
 }
-
 
 .header_slider_1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
@@ -900,7 +905,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .header .text-container {
-  font-family: 'aranya';
+  font-family: "aranya";
   font-weight: 200;
   float: right;
   margin-bottom: 4rem;
@@ -1517,7 +1522,6 @@ screen and (-ms-high-contrast: none) {
   transition: all 0.3s;
 }
 
-
 .filter .element-item .element-item-overlay .mobile-more {
   display: none;
 }
@@ -1531,7 +1535,6 @@ screen and (-ms-high-contrast: none) {
   padding-left: 10px;
   font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
 }
-
 
 #schedule {
   text-align: center;
@@ -1742,7 +1745,7 @@ screen and (-ms-high-contrast: none) {
 
 .counter #counter .cell {
   display: inline-block;
-  width: 12.5rem;
+  width: 22.5rem;
   margin-bottom: 0.75rem;
 }
 
@@ -1756,7 +1759,7 @@ screen and (-ms-high-contrast: none) {
 
 .counter #counter .counter-info {
   display: inline-block;
- 
+  font-family: "aranya";
   vertical-align: middle;
 }
 
@@ -1777,7 +1780,7 @@ screen and (-ms-high-contrast: none) {
   height: 60%;
   line-height: 12px !important;
   font-size: 13px !important;
-  font-family: 'aranya' !important;
+  font-family: "aranya" !important;
 }
 
 .loadmore {
