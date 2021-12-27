@@ -81,7 +81,7 @@
     spaceBetween: 0,
     zoom: {
       maxRatio: 1.2,
-      minRation: 1
+      minRation: 1,
     },
   });
   // filter items on button click
@@ -142,18 +142,18 @@
       $(this).removeClass("notEmpty");
     }
   });
-  var flag = 0
-  $(window).scroll(function() {
-    var hT = $('#gallery').offset().top,
-        hH = $('#gallery').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-        if (wS > (hT+hH-wH) && flag === 0){
-            flag=1;
-            console.log('H1 on the view!');
-            getPosts()
-        }
- });
+  var flag = 0;
+  $(window).scroll(function () {
+    var hT = $("#gallery").offset().top,
+      hH = $("#gallery").outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > hT + hH - wH && flag === 0) {
+      flag = 1;
+      console.log("H1 on the view!");
+      getPosts();
+    }
+  });
 
   /* Back To Top Button */
   // create the back to top button
