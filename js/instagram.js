@@ -1,6 +1,6 @@
 var instagramPosts = [];
 var fetchUrl =
-  "https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=IGQVJXNFRLaTREWmt1My02eVNXUF9fWHN2T2RoOEp4NktRMHlKTmp5RElrMFN0SW9JMnJWVHE1cFhMZAmgzclhhY1hjZAl82Yi15aTJET0g4UWNIei01enE1eDFrVllnYXNaTHVNYkpRU3V2WHA5a0k0YgZDZD";
+  "https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=IGQVJWX3ExZAF9GdU1MQ0prRk1idzNTLTlxRlFmVDNKX1dlVGRwR2hqY1FtZAFVEODExOUxiVmEyN3FXM2NkR3gzcTc2aTAtSlRhQU96ek5ZAMUZAmaVRMOTd1Y2pJdUJ5amdsNzUySnQ2MVhwM3A2clhQOAZDZD";
 var postsCount = 0;
 var currentDisplayPostcount = 0;
 
